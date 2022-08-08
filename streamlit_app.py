@@ -29,7 +29,7 @@ streamlit.header('Fruityvice Fruit Advice!')
 
 import requests
 #Separate the fruit name from the URL so that you can add a variable
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + kiwi)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 
 #take the json version of the response and normalize it
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
